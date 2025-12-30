@@ -16,9 +16,11 @@ export function useWebSocket({ onMessage, config }: UseWebSocketOptions) {
 
   const connect = useCallback(() => {
     try {
-      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
-      const host = window.location.host
-      const wsUrl = `${protocol}//${host}/ws/${clientIdRef.current}`
+      // 在开发环境中直接连接到后端，避免 Vite 代理问题
+      const isDev = import.meta.env.DEV
+      const wsUrl = isDev 
+        ? `ws://localhost:8000/ws/${clientIdRef.current}`
+        : `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws/${clientIdRef.current}`
       
       setConnectionStatus('connecting')
       const ws = new WebSocket(wsUrl)
