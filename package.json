@@ -1,0 +1,24 @@
+{
+  "name": "iflow-sdk-web",
+  "version": "1.0.0",
+  "description": "iFlow SDK Web Interface - Modern UI for AI Agent Communication",
+  "scripts": {
+    "install:all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
+    "dev:backend": "cd backend && python server.py",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "node start.js"
+  },
+  "keywords": [
+    "iflow",
+    "ai",
+    "agent",
+    "sdk",
+    "websocket",
+    "react",
+    "fastapi"
+  ],
+  "author": "iFlow SDK Team",
+  "license": "MIT"
+}
+

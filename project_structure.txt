@@ -1,0 +1,37 @@
+.
+|-- ARCHITECTURE.md
+|-- CONTRIBUTING.md
+|-- LICENSE
+|-- PROJECT_OVERVIEW.md
+|-- QUICKSTART.md
+|-- README.md
+|-- SCREENSHOTS.md
+|-- backend
+|   |-- __init__.py
+|   |-- requirements.txt
+|   `-- server.py
+|-- frontend
+|   |-- index.html
+|   |-- package.json
+|   |-- postcss.config.js
+|   |-- public
+|   |   `-- vite.svg
+|   |-- src
+|   |   |-- App.tsx
+|   |   |-- components
+|   |   |-- hooks
+|   |   |-- index.css
+|   |   |-- main.tsx
+|   |   |-- types.ts
+|   |   `-- vite-env.d.ts
+|   |-- tailwind.config.js
+|   |-- tsconfig.json
+|   |-- tsconfig.node.json
+|   `-- vite.config.ts
+|-- package.json
+|-- project_structure.txt
+|-- start.bat
+|-- start.js
+`-- start.sh
+
+6 directories, 28 files
